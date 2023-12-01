@@ -22,6 +22,7 @@ y = 9; // Se puede reasignar valor a una variable local
 // z = 9; // No se puede reasignar valor a una constante
 const mainContent = document.getElementById("mainContent");
 mainContent.innerHTML = "<h2>Variables</h2>";
+/* 
 mainContent.innerHTML += "<p>x = " + x + "</p>";
 mainContent.innerHTML += "<p>y = " + y + "</p>";
 mainContent.innerHTML += "<p>z = " + z + "</p>";
@@ -36,4 +37,18 @@ mainContent.innerHTML += "<p>x / y = " + x / y + "</p>";
 console.log(x % 2);
 mainContent.innerHTML += "<p>x % 2 = " + (x % 2) + "</p>";
 console.log(y % 2);
-mainContent.innerHTML += "<p>y % 2 = " + (y % 2) + "</p>";
+mainContent.innerHTML += "<p>y % 2 = " + (y % 2) + "</p>"; */
+let contents = [
+  "<p>x = " + x + "</p>",
+  "<p>y = " + y + "</p>",
+  "<p>z = " + z + "</p>",
+  "<p>x + y = " + (x + y) + "</p>",
+  "<p>z - y = " + (z - y) + "</p>",
+  "<p>x * z = " + x * z + "</p>",
+  "<p>x / y = " + x / y + "</p>",
+  "<p>x % 2 = " + (x % 2) + "</p>",
+  "<p>y % 2 = " + (y % 2) + "</p>",
+];
+for (let content of contents) {
+  mainContent.innerHTML += content;
+}
