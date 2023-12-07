@@ -1,3 +1,4 @@
+/* Gato eres el mejor :3 */
 let body = document.body;
 let title = document.title;
 if (title !== "Conditionals Examples") {
